@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    color: white;
+    font-family:'Courier New', Courier, monospace;
+}
+.container{
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    background-color: #96C9F2;
+    border: 15px solid #DF8F9D;
+    width: 100%;
+}
+.main{
+    display: flex;
+}
+.main .section{
+    background-color: #485373;
+    border: 15px solid #7BC18A;
+    width: 70%;
+}
+.main .aside{
+    background-color: #364624;
+    border: 15px solid #FD9258;
+    width: 30%;
+}
+.footer{
+    background-color: #FF7769;
+    border: 15px solid #466FA6;
+    width: 100%;
+}
+@media (max-width: 1000px) {
+    .main{
+        display:block;
+    }
+    .main .section{
+        width: 100%;
+    }
+    .main .aside{
+        width: 100%;
+    }
+}
